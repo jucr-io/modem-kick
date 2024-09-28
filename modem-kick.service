@@ -1,0 +1,19 @@
+[Unit]
+Description=modem-kick
+ConditionVirtualization=!container
+
+[Service]
+Type=exec
+ExecStart=/usr/sbin/modem-kick
+Restart=always
+CapabilityBoundingSet=CAP_SYS_ADMIN CAP_NET_ADMIN
+ProtectSystem=true
+ProtectHome=true
+PrivateTmp=true
+RestrictAddressFamilies=AF_NETLINK AF_UNIX
+NoNewPrivileges=true
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
