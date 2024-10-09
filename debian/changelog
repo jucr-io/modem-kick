@@ -1,0 +1,6 @@
+modem-kick (1.0-1~dcbw+1) bullseye-backports; urgency=medium
+
+  * Initial package
+
+ -- Dan Williams <dan@ioncontrol.co>  Mon, 30 Sep 2024 03:32:15 +0000
+

@@ -1,0 +1,19 @@
+Source: modem-kick
+Section: net
+Priority: optional
+Maintainer: dan@ioncontrol.co
+Uploaders: dan@ioncontrol.co
+Build-Depends: debhelper-compat (= 13),
+               gnome-common,
+               libmm-glib-dev,
+Standards-Version: 4.6.1
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/jucr-io/modem-kick
+Vcs-Browser: https://github.com/jucr-io/modem-kick
+Homepage: https://github.com/jucr-io/modem-kick
+
+Package: modem-kick
+Architecture: linux-any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Kicks modems in idle/denied mode
