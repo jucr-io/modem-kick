@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     env:
-      dependencies: gcc libglib2.0-dev libmm-glib-dev pkgconf
+      dependencies: build-essential debhelper-compat gnome-common libglib2.0-dev libmm-glib-dev pkgconf
       CC: gcc
 
     runs-on: ubuntu-latest
